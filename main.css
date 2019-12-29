@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  font-family: sans-serif;
+  transition: all 0.5s ease;
+  color: white;
+}
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.page1 p {
+  font-size: 25px;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+section img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+}
+.page2 h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.page2 p {
+  font-size: 15px;
+}
+.bg-active {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+}
+.coffeeicon {
+  position: relative;
+  color: black;
+  animation-name: caffe;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+@keyframes caffe {
+  0% {
+    color: green;
+    left: 100px;
+    top: 0;
+  }
+  50% {
+    color: blue;
+    left: 100px;
+    top: 0;
+  }
+
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  /* from {
+    color: #fa7497;
+    transform: rotate(180deg);
+  }
+  to {
+    color: black;
+    transform: rotate(360deg);
+  } */
+}
+
+@media only screen and (max-width: 425px) {
+  .page1 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .page1 p {
+    font-size: 20px;
+  }
+  .page2 h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .page2 p {
+    font-size: 15px;
+    margin: auto 15px;
+  }
+}
